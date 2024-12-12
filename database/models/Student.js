@@ -15,6 +15,23 @@ const Student = db.define("student", {
   lastname: {
     type: Sequelize.STRING,
     allowNull: false
+  },
+
+  email: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+
+  gpa: {
+    type: Sequelize.DOUBLE,
+    allowNull: true,
+    min: 0.0,
+    max: 4.0
+  },
+
+  picture: {
+    type: Sequelize.STRING,
+    defaultValue: "https://picsum.photos/id/1/50"
   }
 });
 
