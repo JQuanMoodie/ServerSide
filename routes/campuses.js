@@ -44,7 +44,7 @@ router.delete('/:id', ash(async(req, res) => {
       id: req.params.id
     }
   });
-  res.status(200).json("Deleted a campus!");
+  res.status(200).json(campuses);
 }));
 
 /* ADD NEW CAMPUS */
